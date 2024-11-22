@@ -549,5 +549,10 @@ body {
 
 .container main header .nav-links button:hover i::before,
 .container .sidebar .logo button:hover i::before {
+    display: none;
+}
+
+.container main header .nav-links button:hover i::before,
+.container .sidebar .logo button:hover i::before {
     color: #5773ff;
 }
