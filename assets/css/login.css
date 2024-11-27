@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ccc;
+}
+
+.content {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur;
+    color: #fff;
+    border-radius: 16px;
+    padding: 30px 40px;
+    line-height: 1.6;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 26px;
+    letter-spacing: 0.5px;
+}
+
+.content .form-input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.form-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-input input::placeholder {
+    color: #fff;
+}
+
+.content .form-input svg {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translate(-50%);
+}
+
+.content .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.content .btn:hover {
+    transform: scale(1.05);
+}
+
+.content .login-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.content .login-link p a:hover {
+    text-decoration: underline;
+}
+
+.content .login-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+@media only screen and (max-width: 520px) {
+    .content {
+        width: 90%;
+        padding: 30px 10px;
+    }
+}
